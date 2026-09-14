@@ -1,0 +1,16 @@
+*.exe
+*.dll
+*.o
+*.obj
+*.prg
+*.d64
+*.t64
+*.tap
+*.crt
+*.sid
+_build/
+.idea/
+.vscode/
+*.tmp
+*.bak
+~$*

@@ -1,0 +1,10 @@
+sum = line_number  ' 16-bit
+pos = 0; quote_mode = off
+for each char c in raw line:
+  pos++
+  if c = " then toggle quote_mode
+  if c = space and not quote_mode then skip
+  else sum = (sum + c * pos) mod 65536
+byte = (sum & FF) XOR (sum >> 8)
+letters = "ABCDEFGHJKMPQRSX"
+display low_nibble letter + high_nibble letter
